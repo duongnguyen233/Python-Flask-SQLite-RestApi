@@ -1,0 +1,74 @@
+body, html {
+  height: 100%;
+}
+
+/* The banner image */
+.banner-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("BlogImageBackground.jpg");
+
+/* Set a specific height */
+  height: 50%;
+
+/* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.banner-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* Navigation Bar custom */
+.navbar-header > h3{
+  color: #496de3;
+  font-weight: 700;
+}
+.nav-link {
+  color: #496de3;
+}
+
+/* Container custom */
+.container {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.jumbotron > a > p {
+  color: black;
+  font-style: italic;
+}
+#hoverContainer > div:hover {
+  background-color: #c9c9c9;
+}
+.jumbotron > a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* Banner custom */
+.banner-text > h1 {
+  font-weight: 700;
+  width: max-content;
+}
+
+/* Form custom */
+.form-label {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.btn-secondary {
+  width: 300px;
+  font-size: 1.4rem;
+}
+
+/* Rating star */
+.checked {
+  color: orange;
+}

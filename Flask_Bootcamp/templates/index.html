@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Exercise Title</title>
+    </head>
+    <body>
+        <h1> Welcome to my website!</h1>
+        <p>I'm excited to learn Flask!</p>
+        <a href="http://flask.pocoo.org">Here is a link to flask website!</a>
+        <p>Here is a picture of a puppy: {{my_variable}}</p>
+        <p>List name : {{mapping['name 1']}}</p>
+        <ul>
+          {% for item in myList%}
+          <li>{{item}}</li>
+          {% endfor %}
+        </ul>
+
+        {% if 'Rufuss' in myList %}
+          <p>Found Rufuss</p>
+        {% else %}
+          <p>Rufuss not in this list</p>
+        {% endif %}
+
+        <img src="../static/puppy_pic.jpg" alt="">
+    </body>
+</html>

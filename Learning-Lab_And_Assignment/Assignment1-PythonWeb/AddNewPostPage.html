@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Blog</title>
+    <!-- Bootstrap CSS, JS, and jQuery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" href="styles.css" />
+</head>
+  <body>
+    
+
+    <!-- Banner -->
+    <div class="banner-image">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="font-weight: bold;">
+            <div class="navbar-header">
+                <h3>My Blog</h3>
+            </div>
+            <ul class="nav justify-content-end" >
+            <li class="nav-item">
+                <a class="nav-link" href="HomePage.html">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="AddNewPostPage.html">ADD</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="DeleteNewPostPage.html">DELETE</a>
+            </li>
+            </ul>
+        </nav>
+        <div class="banner-text">
+            <h1>Add New Post</h1>
+            <p>You can create a blog here</p>
+        </div>
+    </div>
+
+    <!-- Add New Post Form -->
+    <div class="container">
+        <div class="jumbotron">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Title</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Title of blog">   
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Subtitle</label>
+                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Subtitle of blog">              
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput3" class="form-label">Author</label>
+                <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="Written by">              
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput4" class="form-label">Blog Content</label>
+                <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="Write something">              
+            </div>
+
+            <button type="button" class="btn btn-secondary">Send</button>
+        </div>
+      </div>
+      
+  </body>
+</html>

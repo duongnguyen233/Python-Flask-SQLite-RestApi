@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block headContent %}
+  <h1>Delete Post</h1>
+  <p>You can delete existing blogs here</p>
+{% endblock %}
+{% block mainContent %}
+{% for blog in blogList %}
+  <form method="post">
+    <div class="container">
+      <div class="jumbotron">
+          {{form.hidden_tag()}}
+          <input type="hidden" name="idDelete" value="{{ blog.id }}">
+          <h1>{{blog.title}}</h1>
+          <h5>{{blog.subtitle}}</h5>
+          <p>Posted by {{blog.author}} on {{blog.date_posted}}</p>
+          {{form.submit(class="btn btn-secondary")}}
+      </div>
+    </div>
+  </form>
+  {% endfor %}
+{% endblock %}

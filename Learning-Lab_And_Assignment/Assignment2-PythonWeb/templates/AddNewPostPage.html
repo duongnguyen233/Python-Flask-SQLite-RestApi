@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block headContent %}
+  <h1>Add New Post</h1>
+  <p>You can create a blog here</p>
+{% endblock %}
+{% block mainContent %}
+  <div class="container">
+    <div class="jumbotron">
+      <form method="post">
+        {{form.hidden_tag()}}
+          <div class="mb-3 form-label">
+              {{form.title.label}}<br>{{form.title()}}
+          </div>
+          <div class="mb-3 form-label">
+              {{form.subtitle.label}}<br>{{form.subtitle()}}
+          </div>
+          <div class="mb-3 form-label">
+              {{form.author.label}}<br>{{form.author()}}
+          </div>
+          <div class="mb-3 form-label">
+              {{form.content.label}}<br>{{form.content(rows=10, cols=40)}}
+          </div>
+          {{form.submit(class="btn btn-secondary")}}
+      </form>
+    </div>
+  </div>
+{% endblock %}
